@@ -1,9 +1,9 @@
 {
-  "name": "fitness-app",
-  "displayName": "fitness-app",
+  "name": "fitnessApp",
+  "displayName": "fitnessApp",
   "expo": {
-    "name": "fitness-app",
-    "slug": "fitness-app",
+    "name": "fitnessApp",
+    "slug": "fitnessApp",
     "version": "1.0.0",
     "platforms": [
       "ios",
