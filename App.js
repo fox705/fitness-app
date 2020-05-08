@@ -10,7 +10,9 @@ import History from './components/History'
 export default function App() {
   return (
     <Provider store={createStore(reducer)}>
-      <AddEntry/>
+       <View style={{flex: 1}}>
+          <History />
+        </View>
     </Provider>
 
   );

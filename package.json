@@ -8,11 +8,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "expo": "~37.0.3",
     "expo-updates": "~0.1.0",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "~0.61.5",
+    "react-native-calendars": "^1.265.0",
     "react-native-gesture-handler": "~1.6.0",
     "react-native-reanimated": "~1.7.0",
     "react-native-screens": "~2.2.0",
@@ -20,11 +22,12 @@
     "react-native-web": "~0.11.7",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
-    "udacifitness-calendar": "github:ftrevo/react-native-calendars#master"
+    "udacifitness-calendar": "ftrevo/react-native-calendars#master"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
     "babel-jest": "~25.2.6",
+    "babel-preset-latest": "^6.24.1",
     "jest": "~25.2.6",
     "react-test-renderer": "~16.9.0"
   },

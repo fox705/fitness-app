@@ -44,12 +44,12 @@ class History extends Component {
   render() {
     const { entries } = this.props
 
-    return (
-        <UdaciFitnessCalendar
+    return (<UdaciFitnessCalendar
         items={entries}
         renderItem={this.renderItem}
         renderEmptyDate={this.renderEmptyDate}
       />
+
     )
   }
 }
