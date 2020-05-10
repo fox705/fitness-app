@@ -6,9 +6,7 @@ import { fetchCalendarResults } from "../utils/api";
 import entries from "../reducers";
 import { receiveEntries, addEntry } from "../actions";
 import { timeToString, getDailyReminderValue } from "../utils/helpers";
-import UdaciFitnessCalendar from 'udacifitness-calendar';
-
-
+import UdaciFitnessCalendar from "udacifitness-calendar";
 
 class History extends Component {
   componentDidMount() {
@@ -29,32 +27,36 @@ class History extends Component {
 
   renderItem = ({ today, ...metrics }, formattedDate, key) => (
     <View>
-      {today
-        ? <Text>{JSON.stringify(today)}</Text>
-        : <Text>{JSON.stringify(metrics)}</Text>}
+      {today ? (
+        <Text>{JSON.stringify(today)}</Text>
+      ) : (
+        <Text>{JSON.stringify(metrics)}</Text>
+      )}
     </View>
-  )
+  );
 
-  renderEmptyDate (formattedDate){
-    return(<View>
+  renderEmptyDate(formattedDate) {
+    return (
+      <View>
         <Text>No data for this day!</Text>
-    </View>)
+      </View>
+    );
   }
 
   render() {
-    const { entries } = this.props
+    const { entries } = this.props;
 
-    return (<UdaciFitnessCalendar
+    return (
+      <UdaciFitnessCalendar
         items={entries}
         renderItem={this.renderItem}
         renderEmptyDate={this.renderEmptyDate}
       />
-
-    )
+    );
   }
 }
 function mapStateToProps(entries) {
-  return entries;
+  return {entries}
 }
 
 export default connect(mapStateToProps)(History);
